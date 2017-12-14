@@ -1,0 +1,848 @@
+
+/*-------------------------------*/
+/*            Resets             */
+/*-------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+/*-------------------------------*/
+/*            General            */
+/*-------------------------------*/
+
+
+body p,
+body li {
+	font-size: 1.2em;
+}
+
+nav.pintoPages {
+	background-color: #323334; /* Black Background */
+}
+
+/*-------------------------------*/
+/*          Back to Top          */
+/*-------------------------------*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);/* White */
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #f0ad4e; /* Orange */
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+
+/*-------------------------------*/
+/*             Header            */
+/*-------------------------------*/
+
+
+header {
+  	background-image: url('../img/banner2.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	height: 100vh;  
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;	
+  	background-attachment: fixed;
+}
+.jumbotron {
+	margin-bottom: 0;
+}
+
+header.jumbotron h1,
+header.jumbotron p {
+  	color: #f4f4f4; /* White */
+  	text-shadow: 2px 2px 10px #444444;
+}
+header.jumbotron h1 {
+  	font-family: 'Devonshire', cursive;
+  	font-size: 5em;
+}
+header.jumbotron p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+header.jumbotron > div.container > button > a {
+	color: white;
+}
+
+section#down-arrow {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	bottom: -280px;
+}
+section#down-arrow i {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 4em;
+}
+
+
+/*-------------------------------*/
+/*           Navigation          */
+/*-------------------------------*/
+
+.navbar {
+  	margin-bottom: 0; /* Remove the 20px default margin by Bootstrap*/	
+  	background: transparent;
+  	border: 0;
+}
+.navbar-nav {
+	margin: 5px -5px;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #f4f4f4; /* White */
+ 	font-size: 1em;
+  	padding: 10px;
+	font-family: 'Oswald', sans-serif;
+  	text-shadow: 2px 2px 10px #444444;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: #f46f25; /* Dark Orange*/
+}
+.navbar-brand {
+  	padding: 0px;
+}
+.navbar-brand > img {
+  	height: 100%;
+  	padding: 15px;
+  	width: auto;
+}
+
+
+
+/*-------------------------------*/
+/*              Main             */
+/*-------------------------------*/
+main {
+	font-family: 'Lato', sans-serif;
+	color: #333333; /* Black Text */
+}
+main h3,
+main h2 {
+	font-weight: 400; 
+	color: #333333; /* Black Text */
+
+}
+main p,
+main li {
+	font-weight: 300; 
+}
+
+
+/*-------------------------------*/
+/*       Section =  Museum       */
+/*-------------------------------*/
+section#museum {
+	color: #333333;
+}
+section#museum div.col-lg-6 > p {
+	text-align: justify;
+}
+
+section#museum h3 { 
+    overflow: hidden;
+}
+
+section#museum h3:before,
+section#museum h3:after {
+    background-color: #f0ad4e; /* Orange */
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+section#museum h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+section#museum h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/*-------------------------------*/
+/*     Section = pinto-cafe      */
+/*-------------------------------*/
+
+section#pinto-cafe div.thumbnail {
+	background-image: url('../img/pinto_cafe_food.jpg');
+  	background-size: cover;
+  	background-position: center center;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: left;
+}	
+
+section#pinto-cafe div.caption h3 {
+	font-size: 2em;
+}
+
+section#pinto-cafe div.caption button a {
+	color: white;
+}
+/*------------------------------------*/
+/*  Section = Testimonials and Events */
+/*------------------------------------*/
+
+section#testimonials div.col-lg-8,
+section#testimonials div.col-md-8,
+section#testimonials div.col-sm-8,
+section#testimonials div.col-lg-4,
+section#testimonials div.col-md-4,
+section#testimonials div.col-sm-4 {
+	padding: 5px;
+}
+section#testimonials div.col-lg-8,
+section#testimonials div.col-md-8,
+section#testimonials div.col-sm-8 {
+	width: 66%;
+}
+section#testimonials div.col-lg-4,
+section#testimonials div.col-md-4,
+section#testimonials div.col-sm-4 {
+	width: 33%;
+}
+section#testimonials h3.testi-info {
+	margin-bottom: 1.5em;
+}
+section#testimonials div.carousel p:nth-child(2) {
+	font-style: italic;
+}
+section#testimonials div.carousel p:nth-child(3) {
+	font-weight: 700;
+}
+
+section#testimonials div.carousel {
+	height: 20em;
+	padding: 10px;
+}
+section#testimonials div.carousel img {
+	border-radius: 50%;
+}
+section#testimonials ol.carousel-indicators li.active {
+	background-color: #f0ad4e; /* Orange */
+}
+section#testimonials ol.carousel-indicators li {
+	border-color: #f0ad4e; /* Orange */
+}
+
+section#testimonials div.panel-warning > div.panel-heading {
+	background-color: #f0ad4e; /* Orange */
+	border-color: #f0ad4e; /* Orange */
+}
+section#testimonials div.panel-warning  {
+	border-color: #f0ad4e; /* Orange */
+}
+section#testimonials div.panel-body {
+	padding-bottom: 0;
+}
+section#testimonials div.latest-event div.well a > h4 {
+	color:  #f0ad4e; /*Orange*/
+}
+
+/*-------------------------------*/
+/*      Section = Contact        */
+/*-------------------------------*/
+section#contact {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+section#contact h2 {
+	color:  #f0ad4e; /*Orange*/
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+section#contact i {
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #f0ad4e; /* Orange */
+}
+section#contact strong {
+	color: #f0ad4e; /* Orange */
+}
+section#contact span{
+	font-family: 'Lato', sans-serif;
+	color: #333333; /* Black Text */
+}
+
+
+section#contact div#map > iframe {
+	width: 450px;
+	height: 450px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+section#contact h3	{
+	color: #f46f25; /*Dark Orange*/
+}
+section#contact ul li {
+	list-style: none;
+}
+section#contact h4 > li {
+	font-weight: none;
+}
+
+section#contact div.well {
+	padding: 30px;
+	margin: 5px;
+}
+
+/*-------------------------------*/
+/*       Section = About         */
+/*-------------------------------*/
+section#about {
+	position: relative;
+	margin-top: 30px;
+}
+section#about h2 {
+	color:  #f0ad4e; /*Orange*/
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+section#about figure img {
+	margin-bottom: 0;
+}
+section#about figure > figcaption {
+	margin: 0;
+	font-style: italic;
+	font-size: 0.8em;
+	margin-bottom: 20px;
+}
+
+section#about figure > figcaption > a {
+	color: #f0ad4e; /*Orange*/
+}
+
+section#about span { 
+    overflow: hidden;
+}
+
+section#about span:before,
+section#about span:after {
+    background-color: #f0ad4e; /* Orange */
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 45%;
+}
+
+section#about span:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+section#about span:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+section#about div.row:nth-child(1) {
+	margin-top: 20px;
+}
+
+section#about div.row:nth-child(1) p,
+section#about div.row:nth-child(3) p {
+	text-align: justify;
+}
+
+section#about div.row:nth-child(2) {
+	margin: 20px auto;
+}
+
+section#about div.row:nth-child(2) i {
+	color: #f0ad4e; /* Orange */
+}
+
+section#about div.row:nth-child(3) li {
+	list-style: none;
+}
+
+section#about div.row:nth-child(3) div.well {
+	background-color: rgba(240, 173, 78, 0.3); /* Orange */
+	border:1px solid #f0ad4e; /* Orange */
+}
+section#about div.row:nth-child(3) div.well > h3 > i:nth-child(1) {
+	color: #f46f25; /* Dark Orange */
+}
+section#about div.row:nth-child(3) div.well i {
+	color: #f0ad4e; /* Orange */
+}
+
+/*-------------------------------*/
+/*       Section = Events        */
+/*-------------------------------*/
+section#events {
+	position: relative;
+	margin-top: 50px;	
+}
+
+section#events h2 {
+	color:  #f0ad4e;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+section#events h4 {
+	color: #f46f25; /* Dark Orange*/
+}
+
+section#events div.well {
+	 position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+
+section#events div.well:hover {
+	box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+
+section#events div.well > span {
+	background-color: rgba(240, 173, 78, 0.3); /* Orange */
+	border:1px solid #f0ad4e; /* Orange */
+	font-weight: 300;
+	border-radius: 5px;
+}
+
+/*-------------------------------*/
+/*   section = Pinto Cafe Menu   */
+/*-------------------------------*/
+section#pinto-cafe-menu {
+	position: relative;
+	margin-top: 50px;
+}
+
+section#pinto-cafe-menu:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/pinto_cafe_food_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+section#pinto-cafe-menu {
+	padding-bottom: 50px;
+}
+section#pinto-cafe-menu h2 {
+	color:  #f0ad4e;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+section#pinto-cafe-menu h3 {
+	margin-top: 30px;
+	font-weight: bold;
+}
+section#pinto-cafe-menu div.cafe-info > p { 
+	text-align: justify;
+}
+
+section#pinto-cafe-menu span { 
+    overflow: hidden;
+}
+
+section#pinto-cafe-menu span h3:before,
+section#pinto-cafe-menu span h3:after {
+    background-color: #f0ad4e; /* Orange */
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 45%;
+}
+
+section#pinto-cafe-menu span h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+section#pinto-cafe-menu span h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+section#pinto-cafe-menu h4{
+	margin-top: 30px;
+	font-weight: 700;
+}
+section#pinto-cafe-menu div.cafe-menu > p {
+	color: #7a736b; /* Dark Brown */
+	margin: 0 auto;
+	padding: 0;
+	font-weight: 400;
+}
+section#pinto-cafe-menu div.cafe-menu > small {
+	font-size: 0.9em;
+	font-style: italic;
+	color: #f46f25; /* Orange */
+	font-weight: 400;
+}
+
+section#pinto-cafe-menu div.cafe-menu hr {
+	border-bottom: dashed 1px #f0ad4e;
+	margin: 5px auto;
+	border-top: none!important;
+}
+
+/*-------------------------------*/
+/*       Section = Gallery       */
+/*-------------------------------*/
+section#pintogallery {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+section#pintogallery h2 {
+	color:  #f0ad4e;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+
+section#pintogallery li.tab-link {
+	background-color: #323334;
+	list-style: none;
+	padding: 10px 20px;
+	font-weight: 700;
+	color: #f4f4f4; /* white */
+	margin: 0;
+}
+section#pintogallery li.tab-link:even {
+	border-left: 1px solid #fff;
+}
+
+section#pintogallery li.tab-link:hover {
+	cursor: pointer;
+}
+section#pintogallery div.tab {
+	background-color: #fff;
+}
+section#pintogallery div.tab p {			
+	margin: 0;
+}
+
+section#pintogallery div#tab-2-info,
+section#pintogallery div#tab-3-info,
+section#pintogallery div#tab-4-info,
+section#pintogallery div#tab-5-info,
+section#pintogallery div#tab-6-info {
+	display: none;
+}
+section#pintogallery li.tabActive {
+	background-color: #f0ad4e; /* Orange */
+	color: #333333; /* Black Text */
+}
+section#pintogallery .gallery-item {
+    height: auto;
+    position: relative;
+}
+section#pintogallery .image-info {
+	position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: none;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: white;
+    display: flex;
+ 	justify-content: center;
+  	align-items: center;
+}
+span.image-info-align {
+	width: 100%;
+	padding: 20px 10px;
+}
+
+figure.gallery-item h3 {
+	color: #f4f4f4;
+	margin-top: 0;
+}
+
+
+/*-------------------------------*/
+/*             Footer            */
+/*-------------------------------*/
+
+footer {
+	background-color: #323334; /* Black Background */
+	color: #7a736b; /* Dark Brown */
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+footer h4 {
+	font-weight: bold;
+	color: #f4f4f4; /* White */
+}
+footer a {
+	color: #7a736b;
+	font-size: 1.2em;
+}
+
+footer a:hover {
+	color: #f4f4f4; /* White */
+	text-decoration: none;
+}
+
+footer i {
+	color: #7a736b;
+	margin-right: 1em;
+}
+footer i:hover {
+	color: #f4f4f4; /* White */
+}
+
+footer #newsletter {
+	margin-bottom: 15px;
+}
+footer div.col-lg-12 {
+	margin-top: 30px;
+}
+
+footer div.col-lg-4 > form >  button {
+	font-size: 1em;
+	padding: 2px;
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+/*-------------------------------*/
+/*     Mobile & Smartphones      */
+/*-------------------------------*/
+@media only screen and (max-width: 480px) {
+	body p,
+	body li {
+		font-size: 1em;
+	}
+	header.jumbotron p {
+		font-size: 1.2em;
+	}
+
+	header.jumbotron h1 {
+		font-size: 4.1em;
+	}
+	main {
+		padding: 5px;
+	}
+	.caption {
+    	top: 10%;
+	}
+	div.col-xs-12 {
+		width: 100%!important;
+		margin: 0;
+	}
+
+	.navbar-inverse .navbar-nav > li {
+		background-color: #323334; /* Black Background */
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		letter-spacing: 3px;
+	}
+	.navbar-nav {
+		margin: 0 -15px;
+	}
+	section#pinto-cafe {
+		margin-top: 1em;
+	}
+	section#about span:before,
+	section#about span:after {
+	    width: 30%;
+	}
+
+	section#about span:before {
+	    right: 0.5em;
+	    margin-left: -20%;
+	}
+	section#about span:after {
+	    left: 0.5em;
+	    margin-right: -20%;
+	}	
+
+	section#about div.remember{
+		margin: 0;
+	}
+
+	section#about div.row:nth-child(3) > div.col-xs-12 {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	section#about div.row:nth-child(3) div.well {
+		padding: 10px;
+	}
+
+	section#museum h3:before,
+	section#museum h3:after {
+    	background: none;
+	}
+	
+	section#pinto-cafe-menu span h3:before,
+	section#pinto-cafe-menu span h3:after {
+	    width: 30%;
+	}
+
+	section#pinto-cafe-menu span h3:before {
+	    right: 0.5em;
+	    margin-left: -20%;
+	}
+	section#pinto-cafe-menu span h3:after {
+	    left: 0.5em;
+	    margin-right: -20%;
+	}	
+
+	section#testimonials div.carousel {
+		height: 30em;
+		padding: 10px;
+	}
+	
+	section#testimonials div.carousel img {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	footer {
+		text-align: center;
+	}
+	footer i {
+		margin: 0 10px;
+	}
+
+	footer p {
+		font-size: 1.2em;
+	}
+
+	footer div.col-lg-4 > form >  button,
+	footer div.col-lg-4 > form > input {
+		margin: 0 auto;
+	}
+
+	footer #newsletter {
+		margin-bottom: 5px;
+	}
+
+	footer div.col-lg-4 > form > input {
+		width: 200px;
+		display: block;
+		text-align: center;	
+	}
+
+    footer div.col-lg-4 > form >  button {
+    	display: block;
+    	padding: 5px 10px;
+    	margin-top: 0;
+    	margin-bottom: 20px;
+    }
+}
+
+/*-------------------------------*/
+/*            Tablet             */
+/*-------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	body p {
+		font-size: 1em;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+ 		font-size: 1em;
+	}
+	.navbar-nav {
+		margin: 0 -15px;
+	}
+	.navbar-inverse .navbar-toggle {
+		background-color: rgba(195, 81, 47, 0.7);
+	}
+	.navbar-inverse .navbar-toggle:hover,
+	.navbar-inverse .navbar-toggle:focus {		
+		background-color: rgba(195, 81, 47, 0.7);
+	}
+
+	section#about span:before,
+	section#about span:after {
+	    width: 40%;
+	}
+
+	section#about span:before {
+	    right: 0.5em;
+	    margin-left: -30%;
+	}
+	section#about span:after {
+	    left: 0.5em;
+	    margin-right: -30%;
+	}	
+	span.image-info-align {
+	width: 50%;
+	}
+}
+/*-------------------------------*/
+/*        Desktop & PC's         */
+/*-------------------------------*/
+@media only screen and (min-width: 1200px) {
+	div.container {
+		width: 960px;
+	}
+	span.image-info-align {
+	width: 50%;
+	}
+}
